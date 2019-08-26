@@ -1,0 +1,133 @@
+/*=============================================================================
+ default menu setting
+=============================================================================*/
+
+ul#master_menu_side, ul#default_menu_side, ul#menu_side, ul#view_edit, ul#up_down, ul#preview_head_title {
+    list-style-type: none;
+    padding: 0 2px;
+    padding-top: 7px;
+}
+ul#master_menu_side li, ul#menu_side li, ul#view_edit li, ul#up_down li{
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 1.8em;
+    padding: 0 20px;
+
+}
+ul#master_menu_side li, ul#view_edit li {
+    margin: 9px;
+}
+ul#master_menu_side li.submenu, ul#menu_side li.submenu {
+    margin-left: 30px;
+}
+ul#master_menu_side li.submenu::before {
+    content: "+";
+}
+ul#view_edit li input:first-child {
+    margin-right: 12px;
+}
+ul#menu_side, ul#view_edit, ul#up_down {
+    float: left;
+}
+ul#menu_side li  {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    font-size: 12px;
+    padding: 2px 25px 2px 5px;
+    border: solid 1px #CCC;
+    min-width: 40px;
+    background:#fff ;
+    background-size: 9px;
+    background-position: 91% center;
+    font-weight: 300;
+    margin-bottom: 5px;
+    width: 200px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+50,e1e1e1+51,f6f6f6+100;White+Gloss+%231 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+
+}
+ul#menu_side li.submenu  {
+    width: 171px;
+}
+
+ul#up_down li {
+    margin: 5.5px;
+    text-align: center;
+}
+ul#up_down i{
+    font-size: medium;
+    color: blue;
+}
+ul#up_down .submenu i{
+    color: #ed5181;
+}
+ul#preview_head_title li {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    padding-right: 54px;
+}
+ul#preview_head_title li:first-child {
+    width: 228px;
+}
+.view_edit_select option:first-child {
+    color: green;
+}
+.view_edit_select option {
+    color: red;
+}
+.view_edit_select {
+    -webkit-appearance:none;
+}
+
+.view_edit_select:after {
+    content:"\f0dc";
+
+}
+
+.hideLi {
+    display: none;
+}
+.displayLi {
+    display: block;
+}
+
+#menu_assign_tbl .block_preview {
+    border-left: 1px solid #ccc;
+    padding-left: 30px;
+    width: 550px;
+    min-height: 400px;
+    display: block;
+    overflow: auto;
+}
+/*//////////////////////////*/
+.ul-column-title  ul {
+    list-style-type: none;
+}
+
+.ul-column-title  ul li {
+    /*background-color: #fff;*/
+}
+
+.viewable::before, .editable::before {
+}
+.fa-check {
+    color: #00dd00;
+}
+
+.fa-close {
+    color: #A52A2A;
+}
+
+.btn_auth {
+    float: right;
+    margin-right: 5px;
+}
+.btn_auth input {
+    display: none;
+}

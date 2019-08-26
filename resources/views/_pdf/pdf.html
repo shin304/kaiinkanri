@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+ <link rel="stylesheet" type="text/css" href="test.css">
+<title>{{$title.test_title}}</title>
+<style type='text/css'>
+body{
+	/*font-family: "KozGoPro-Light", "小塚ゴシック Pro L", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;*/
+}
+
+table{
+	border-collapse: collapse;
+
+	width: 700px;
+
+}
+    tr {
+
+        padding: 0px 0px 0px 0px;
+    }
+    th {
+
+        width: 70px;
+        vertical-align: text-top;
+		padding: 10px 0;
+    }
+    td {
+
+
+        padding: 10px 10px;
+
+    }
+    .t_td0{
+	    width: 30px;
+	    text-align: center;
+	    background: #f2f2f2;
+	    border: solid 1px #ccc;
+	    font-size: 12px;
+    }
+    .t_td1{
+	    border: solid 1px #ccc;
+	    width: 19.8%;
+	    font-size: 13px;
+	    text-align: center;
+    }
+
+</style>
+</head>
+<body>
+<div>
+<p style="text-align:center;font-size:26px;">{{$title.test_title}}</p>
+<p style="margin-right:200px;text-align:right;font-size:18px;">　　年　 　組　氏名：</p>
+<p style="font-size:15px;">設問数　全{{$title.test_count}}問</p>
+
+
+
+
+
+
+
+
+<table>
+{{foreach from=$data item=row key=cnt}}
+{{if $row.url == ''}}
+
+<tr>
+<th>問{{$cnt+1}}．</th>
+<td colspan="5">{{$row.text|nl2br}}</tr>
+<tr>
+	<th></th>
+	<td class="t_td0">答え</td>
+	<td class="t_td1"></td>
+	<td class="t_td1"></td>
+	<td class="t_td1"></td>
+	<td class="t_td1"></td>
+</tr>
+
+<tr>
+{{/if}}
+{{/foreach}}
+
+
+
+
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,473 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+font-family:'メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+
+}
+body{
+
+	background: rgba(0,0,0,0.03);
+}
+a{
+	text-decoration: none;
+
+}
+a:hover{
+	text-decoration: underline;
+
+}
+header{
+	padding: 5px 10px;
+	margin-bottom: 15px;
+ background-color: #16A2B5; background-image: -webkit-gradient(linear, left top, left bottom, from(#16A2B5), to(#0F97A8));
+ background-image: -webkit-linear-gradient(top, #16A2B5, #0F97A8);
+ background-image: -moz-linear-gradient(top, #16A2B5, #0F97A8);
+ background-image: -ms-linear-gradient(top, #16A2B5, #0F97A8);
+ background-image: -o-linear-gradient(top, #16A2B5, #0F97A8);
+ background-image: linear-gradient(to bottom, #16A2B5, #0F97A8);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#16A2B5, endColorstr=#0F97A8);
+box-shadow: 0 1px 0px rgba(149,149,149,0.32);
+}
+
+	.search_box{
+		width: 250px;
+		font-size: 14px;
+		padding: 2px 5px 0 ;
+		border-radius: 3px;
+		border: none;
+		font-weight: 100;
+		letter-spacing: 0.1em;
+		}
+
+.bg{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+h2{
+	font-size: 12px;
+	font-weight: 700;
+	color: #aaaaaa;
+	margin-bottom: 3px;
+}
+
+#main_content{
+	padding-left: 10px;
+
+}
+
+.head_title{
+	color: #000;
+    font-size: 16px;
+    margin-top: -5px;
+}
+
+/*___________________________________________*/
+/*____________左コンテンツ____________________*/
+/*___________________________________________*/
+#left_navi{
+	width: 180px;
+	float: left;
+	margin-right: 10px;
+}
+#juku{
+	margin-bottom: 20px;
+}
+.left_1box{/*＿＿＿＿共通＿＿＿＿*/
+	padding: 3px 0;
+}
+	.juku_name_p{
+		font-size: 15px;
+		font-weight: 600;
+
+	}
+
+
+
+
+
+	.box_info{/*＿＿＿＿共通＿＿＿＿*/
+		line-height: 1.2em;
+		color: #6c6c6c;
+	}
+
+	.edit_p{
+		text-align: right;
+		color: #000;
+	}
+
+
+/*_________レフト_____________________*/
+
+#student, #ivent_name, #class_name {
+	margin-bottom: 20px;
+}
+	.info_name{
+		font-size: 14px;
+		font-weight: 500;
+	}
+	.info_name:hover{
+		background: rgba(198,198,198,0.2);
+		border-radius: 4px;
+	}
+
+	span.student_no{
+		font-weight: 300;
+		padding-left: 9px;
+	}
+
+
+
+/*________フロート解除______________*/
+.clr{
+	clear: both;
+	height: 1px;
+}
+
+
+/*___________________________________________*/
+/*____________センターコンテンツ______________*/
+/*___________________________________________*/
+
+#center_content{
+	float: left;
+	width: 630px;
+	margin-right: 10px;
+
+}
+#center_content_box{
+		background: #FFF;
+	border-radius: 3px;
+	box-shadow: 0 1px 1px rgba(182,182,182,0.42);
+
+}
+
+.content_detail{
+	width:92%;
+	padding-left: 4%;
+}
+
+#center_header{
+	padding: 10px 10px;
+
+}
+.data_select{
+	float: left;
+}
+#date_soat_list{
+	list-style: none;
+	float: right;
+}
+#date_soat_list li{
+	float: left;
+	padding: 0 4px;
+	border-right: solid 1px #d5d5d5;
+}
+
+#date_soat_list li:last-child{
+	border-right:none;
+}
+
+#center_content_main{
+	padding: 10px 10px;
+}
+#center_content_main h2{
+	font-size:14px;
+	background:#d1e4ed;
+	padding:3px;
+	color:#595757;
+	padding-left:10px;
+	margin-bottom:10px;
+}
+
+
+.center_content_main_ul1{
+	margin-left:30px;
+	margin-bottom:20px;
+}
+
+
+/*___________________________________________*/
+/*____________センターコンテンツ______________*/
+/*___________________________________________*/
+
+#right_content{
+float: right;
+	width: 170px;
+
+}
+
+.news_information{
+	min-height: 100px;
+	background: #FFF;
+	border-radius: 3px;
+	box-shadow: 0 1px 1px rgba(182,182,182,0.42);
+	padding: 10px 10px;;
+
+}
+
+/*___________________________________________*/
+/*____________テーブル　メイン______________*/
+/*___________________________________________*/
+
+.table_list{
+	width: 100%;
+}
+	.table_list .text_title{
+		text-align: left;
+		table-layout: fixed;
+	}
+
+	.text_title{
+		border-bottom: dotted 1px #3c3c3c;
+		background: #FFF;
+		padding: 6px 0;
+		font-size: 13px;
+		font-weight: 400;
+	}
+
+	.table_row{
+		text-align: left;
+	}
+	td{
+		padding: 4px;
+		color: #3E3A39;
+	}
+
+	.table_list tr:nth-child(2n+1){
+		background: rgba(248,247,243,0.66);
+	}
+
+
+/*___________________________________________*/
+/*____________塾情報登録・修正______________*/
+/*___________________________________________*/
+
+
+
+.school_input_table{
+	width: 100%;
+
+}
+	.schoop_input_left{
+		font-weight: 600;
+		text-align: left;
+		padding-left: 10px;
+			color: #868686;
+	}
+
+
+	.text_money{
+	width: 20%;
+	text-align: right;
+}
+
+	hr{
+	}
+
+	#btn_submit{
+		width: 150px;
+		text-align: center;
+		background: #5A73A6;
+		border:solid 1px #6b6b6b;
+		color: #FFF;
+		margin-left: 250px;
+	}
+	#btn_reset{
+		width: 150px;
+		text-align: center;
+		background: #5A73A6;
+		border:solid 1px #6b6b6b;
+		color: #FFF;
+	}
+	.exe_button{
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#btn_cancel{
+		width: 150px;
+		text-align: center;
+		background: #5A73A6;
+		border:solid 1px #6b6b6b;
+		color: #FFF;
+	}
+	#btn_select{
+		width: 150px;
+		text-align: center;
+		background: #5A73A6;
+		border:solid 1px #6b6b6b;
+		color: #FFF;
+		margin-left: 250px;
+	}
+	#btn_return{
+		width: 150px;
+		text-align: center;
+		background: #5A73A6;
+		border:solid 1px #6b6b6b;
+		color: #FFF;
+	}
+	#btn_return1{
+		width: 150px;
+		text-align: center;
+		background: #5A73A6;
+		border:solid 1px #6b6b6b;
+		color: #FFF;
+		margin-right:350px;
+	}
+
+
+/*___________________________________________*/
+/*____________塾情報登録・修正______________*/
+/*___________________________________________*/
+
+/*___________________________________________*/
+/*____________生徒情報登録・修正_____________*/
+/*___________________________________________*/
+.aster{
+	color:red;
+}
+.message_area{
+	padding-left:15px;
+}
+.attention{
+	margin:0 0 0 10px;
+}
+.info_message{
+	color:blue;
+}
+.error_message{
+	color:red;
+}
+.text_l{
+	width:98%;
+}
+.text_m{
+	width:50%;
+}
+.text_s{
+	width:30%;
+}
+.text_ss{
+	width:10%;
+}
+
+
+.tabs {
+	overflow:hidden;
+	margin-bottom:5px;
+	padding:0;
+	cursor:pointer;
+}
+.tabs li {
+	width: 14.5%;
+	text-align: center;
+	padding: 5px;
+	list-style-type: none;
+	float: left;
+	border: thin solid #999999;
+	background: none repeat scroll 0 0 #FFFFFF;
+	font-weight:bolder;
+}
+
+/*___________________________________________*/
+/*____________生徒情報登録・修正_____________*/
+/*___________________________________________*/
+
+footer{
+margin: 80px 0 0 0;
+ background-color: #16A2B5;}
+.copyright{
+	padding: 20px;
+	font-size: 10px;
+	color: #FFF;
+}
+
+.copytop {
+    color: #000;
+    font-size: 20px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+/*___________________________________________*/
+/*____________右パネル_____________*/
+/*___________________________________________*/
+.news_information .mark {
+	font-size: 20px;
+	float: left;
+}
+.news_information .invoice_mark {
+	color: #70B23E;
+}
+.news_information .title {
+	font-size: 10px;
+	color: #8E9BBC;
+	float: left;
+	padding: 7px 0 0 5px;
+}
+.news_information .display_date {
+	font-size: 10px;
+	float: right;
+	color: #8E9BBC;
+	padding-top: 7px;
+}
+.news_information .detail {
+	font-size: 12px;
+	display: inline-block;
+	margin: 5px 0 0 15px;
+}
+.news_information hr {
+	color: #DCDDDD;
+	margin: 10px 3px;
+}
+
+/*___________________________________________*/
+/*____________検索結果_____________*/
+/*___________________________________________*/
+.find_list_info {
+	text-align: right;
+	color: #aaa;
+}
+.find_list_info a {
+	text-decoration: none;
+	color: #aaa;
+}
+
+
+
+/*旧メニュー調整　山口１*/
+.old_menu li {
+	list-style:none;
+}
+
+.old_menu ul {
+	list-style:none;
+}
+
+
+
+/*旧メニュー非表示*/
+#old_menu_display {
+	display:none;
+}
+
+/*旧メニュー調整　山口１*/
+
+/*List Without bullet */
+.navlist
+{
+	 list-style-type: none;
+}
+
+.navlist li
+{
+display: inline;
+list-style-type: none;
+padding-right: 20px;
+}
+
+
+
+

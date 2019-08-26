@@ -1,0 +1,183 @@
+@charset "UTF-8";
+html,body{
+
+     background: rgba(246, 246, 246, 0.74);
+}
+body{
+ background: rgba(246, 246, 246, 0.74);
+}
+#yjw_week{
+	background: #fff;
+	padding: 20px;
+	margin-bottom: 3px;
+box-shadow: 0 1px 4px rgba(192, 192, 192, 0.63);	
+}
+.yjw_table img{
+	height: 30px;
+	margin-top: 5px;
+}
+.weather_p{
+	text-align: right;
+	font-size: 10px !important;
+	
+}
+.yjw_table{
+	border-collapse: collapse;
+	border: solid 1px #ccc;
+}
+.yjw_table td{
+	border: solid 1px #ccc !important;
+	padding: 2px 0;
+	background: #fff;
+}
+.yjw_table td small{
+	font-size: 12px !important;	
+}
+
+#section_content2{
+	padding: 20px;
+box-shadow: 0 1px 4px rgba(192, 192, 192, 0.63);	
+}
+#right_content{
+	background:none !important;
+
+}
+#content_h3{
+	margin-bottom: 10px !important;
+}
+
+.section_content2_in{
+
+}
+#calendar{
+	margin-top: 20px;
+}
+
+#right_content{
+}
+.news_box{
+
+}
+.news_box_right_top{
+	float: left;
+	border-bottom: none !important;
+	margin-right: 15px;
+}
+.news_box_date{
+	border-bottom: none !important;
+	font-weight: bold;
+
+}
+
+.news_box_p1{
+	margin-left: 15px;
+	color: #404040 !important;
+}
+#visit_student_button{
+	
+
+}
+header .submit{
+	padding: 3px 10px !important;
+}
+
+.popup{
+	background: #25b4c6 !important;
+	border-radius: 3px;
+}
+
+.text_link p{
+	color: #0044CC !important;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.text_link{
+	color: #0044CC !important;
+	text-decoration: underline;
+
+}
+.text_link:hover{
+	text-decoration: none;
+}
+.text_link p:hover{
+	text-decoration: none;
+}
+
+
+.table1 {
+	width:auto !important
+}
+.table1 th{
+	padding: 0 20px !important;
+	min-width: 80px !important;
+}
+/*.top_btn li{*/
+
+/*!* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+47,ededed+100;White+3D+%231 *!*/
+/*background: #ffffff; !* Old browsers *!*/
+/*background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%) !important; !* FF3.6-15 *!*/
+/*background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%) !important; !* Chrome10-25,Safari5.1-6 *!*/
+/*background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%) !important; !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ) !important; !* IE6-9 *!*/
+
+/*}*/
+.top_btn li{
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%) !important; /* FF3.6-15 */
+}
+#section_content{
+	padding: 10px !important;
+	background: #fff !important;
+box-shadow: 0 1px 4px rgba(192, 192, 192, 0.63);
+}
+#data_table td{
+	vertical-align: middle !important;
+}
+#section_content h3{
+	padding-left: 10px;
+}
+
+
+/*search_box*/
+
+.search_box{
+
+}
+.search_box table{
+	border-collapse: collapse;
+
+}
+.search_box table th{
+	background: rgba(235, 231, 225, 0.44);
+	padding: 1px 10px;
+	font-size: 12px !important;
+	min-width: 13% !important;
+}
+.search_box table th{
+
+	vertical-align: middle !important;
+
+}
+.search_box table td{
+
+	vertical-align: middle !important;
+
+}
+.search_box table td{
+	padding: 3px 10px 1px;
+}
+.search_box #btn_student_search,.search_box #search_cond_clear,.submit2,.submit3,.submit_return{
+	padding: 3px 10px !important;
+	width: 150px !important;
+}
+.search_box #search_cond_clear{
+	border: solid 1px #ccc !important;
+	
+}
+.table1 img{
+	width: 50px !important;
+	height: 50px !important;
+}
+
+select::-ms-expand {
+	display: none;
+}

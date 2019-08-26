@@ -1,0 +1,350 @@
+@CHARSET "UTF-8";
+
+body {
+	font-size: 12pt;
+	color: #000000;
+	/*background-color: #FFFFFF;*/
+}
+
+div.description {
+	display: block;
+	width:210mm;
+	/*border: 1px dotted #ccc;*/
+	padding: 50px;
+	margin: 20px auto;
+	line-height: 150%;
+	text-align: left;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	font-size:0;
+	clear: both;
+	visibility:hidden;
+}
+
+.content {
+	/*font-family: "ヒラギノ明朝 Pro W3", "細明朝体", "ＭＳ Ｐ明朝", serif;*/
+	padding: 15px;
+	word-wrap: break-word;
+}
+
+.content .header  {
+	font-size: 120%;
+}
+.content .header .title {
+	font-size: 140%;
+}
+.content .header .publish_date {
+	text-align:right;
+}
+.content .header .parent_name {
+	float:left;
+	width:380px;
+}
+.content .header .school_name {
+	/*float:left;
+	width:380px;*/
+	text-align:right;
+}
+.content .header .school_address {
+	text-align:right;
+}
+.content .header .amount_tax {
+	text-decoration: underline;
+	font-size: 130%;
+}
+
+.content .body_area  {
+	font-size: 100%;
+}
+.content .body_area .student_item_list {
+	padding:5px 5px 5px 35px;
+	width:350px;
+}
+
+.content .body_area .item_name {
+	float:left;
+	width:200px;
+}
+
+.content .body_area .item_price {
+	float:left;
+	width:100px;
+	text-align:right;
+}
+.content .body_area .student_total {
+	float:left;
+	width:200px;
+	text-align: right;
+}
+.content .body_area .discount_item_list {
+	width:385px;
+}
+.content .body_area .discount_item_list .item_name {
+	width:235px;
+}
+
+.content .footer_area .discount_item_list {
+	width: 385px;
+}
+.content .footer_area .item_name {
+	float: left;
+	width: 235px;
+	text-align: right;
+}
+.content .footer_area .item_price {
+	float:left;
+	width:100px;
+	text-align:right;
+}
+.content .footer_area .account_area {
+	padding: 0 10px;
+}
+.content .footer_area .bank_name {
+ 	float: left;
+ 	width: 370px;
+}
+.clr{
+	clear: both;
+}
+#content{
+	display: block;
+	width:210mm;
+	padding: 50px;
+	margin: 20px auto;
+	line-height: 150%;
+	text-align: left;
+}
+#content p{
+	line-height: 1.5em;
+	margin: 0;
+
+}
+
+.header_top p{
+	text-align: right;
+}
+header h1{
+	text-align: center;
+}
+
+#pay_info{
+margin-bottom: 30px;
+}
+#pay_info p{
+
+}
+.pay_info_left{
+	float: left;
+	width: 70%;
+}
+.pay_info_left p{
+	padding: 5px 0;
+}
+.company_name{
+	font-size: 18px;
+	text-decoration: underline;
+}
+.pay_title{
+	font-size: 14px;
+}
+
+.pay_much{
+	font-size: 20px;
+	text-decoration: underline;
+}
+.pay_p1{
+	font-size: 14px;
+}
+.pay_kigen{
+	font-size: 14px;
+}
+
+
+.pay_info_right{
+	float: right;
+	width: 30%;
+}
+
+#pay_info .pay_info_right{
+	font-size: 14px;
+
+}
+
+
+#pay_table{
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+#pay_table th,#pay_table td{
+	border: solid 1px #000;
+}
+#pay_table th{
+	text-align: center;
+	padding: 3px 0;
+	background: #e4e4e4
+}
+#pay_table .th1{
+	width: 70%;
+}
+#pay_table .th2{
+
+
+}
+#pay_table td{
+	padding: 3px 10px;
+
+
+}
+#pay_table .td2{
+	text-align: right;
+	min-height: 20px;
+
+}
+#pay_table2{
+	border-collapse: collapse;
+	font-size: 15px;
+	margin-bottom: 10px;
+	margin-left:300px;
+	float: right;
+	width:360px;
+}
+#pay_table2 th{
+	border: solid 1px #000;
+	padding: 3px 10px;
+	background: #e4e4e4
+}
+#pay_table2 td{
+	border: solid 1px #000;
+	text-align: right;
+	padding: 3px 10px;
+	width: 200px;
+}
+.pay_p2{
+	padding-top: 50px;
+	font-size: 14px;
+}
+.bank_account{
+	padding: 10px 0;
+	font-size: 14px;
+}
+
+
+
+
+.card_size {
+width: 315px; 
+height: 197px;
+}
+
+.width_short {
+width: 115px;
+}
+.width_long {
+width: 200px;
+}
+
+.pschool_logo {
+height: 40px;
+text-align:left;
+padding-left:10px;
+}
+.pschool_name {
+font-size:xx-small; 
+text-align:left;
+padding-top:24px;
+}
+.student_logo {
+text-align:center;
+}
+.student_name {
+height: 70px;
+text-align:center;
+}
+.student_code {
+height: 80px; 
+font-size:xx-small;
+text-align:center;
+}
+.student_bottom {
+height: 6px; 
+}
+
+.back_name {
+height:32px;
+text-align:left;
+padding-left:10px;
+}
+.back_logo {
+height:137px;
+text-align:center;
+}
+.back_web {
+text-align:left;
+font-size:xx-small;
+padding-left:10px;
+}
+
+.back_tel {
+height:20px;
+text-align:right;
+font-size:xx-small;
+padding-right:10px;
+}
+.back_bottom {
+height: 8px;
+}
+
+
+.card_box {
+padding-top:200px;
+padding-left:118px;
+}
+table.table_rotate {
+rotate:180;
+padding-left: -118px;
+}
+
+.left_box {
+float: left;
+width: 50px;
+}
+.right_box {
+float: left;
+width: 315px;
+}
+.clear {
+clear:both;
+}
+.left_border {
+height: 394px; 
+border:1px solid black;
+}
+.right_border {
+height: 394px; 
+border:1px solid black; 
+margin-left: -1px;
+}
+img.h32 {
+width: auto;
+max-height: 32px;
+}
+img.h100 {
+width: auto;
+max-height: 100px;
+}
+img.w160 {
+height: auto;
+max-width: 180px;
+}
+
+table {
+border-collapse: separate; 
+border-spacing: 0px; 
+border: 0px solid #FF4040
+}

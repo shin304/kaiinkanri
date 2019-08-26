@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+<meta name="keywords" content="キーワード1,キーワード2,キーワード3">
+<meta name="description" content="このページに関する簡単な説明。">
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Favicon -->
+<link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
+<title>らくらく会員管理</title>
+
+<script type="text/javascript">
+$(function(){
+$("#header").load("parts/header.html");
+$("#nav").load("parts/subMenu.html");
+$("#footer").load("parts/footer.html");
+})
+</script>
+
+</head>
+<body>
+
+<!-- コンテナ開始 -->
+<div id="container">
+
+<!-- ページ開始 -->
+<div id="page">
+
+
+<!-- ヘッダ開始 -->
+<div id="header"></div>
+<!-- ヘッダ終了 -->
+
+
+<!-- コンテンツ開始 -->
+<div id="content">
+
+
+<!-- メインカラム開始 -->
+<div id="main">
+
+<h1 class="pageTitle">イベント管理</h1>
+
+<div class="section emphasis">
+
+<h2>イベント（1度だけの行事）の定義を行います<br>基本的には、スポット請求となり請求書を作成しません</h2>
+
+<p>登録・変更、検索を行います。</p>
+<ul>
+  <li>イベントは不定期に開催される行事の参加料の設定と参加者の募集を行います。</li>
+  <li>料金の設定は、プランと同じように、会員種別により行います。</li>
+  <li>通常イベントの告知には、メールを使用し、メールを受信した請求先は、メールに記載してあるURLにアクセスし、参加／不参加と参加の場合は支払方法を選択します。</li>
+  <li>支払方法で、定期請求と一緒に参加料を支払うことも（施設側が許可／不許可の設定）、この参加料だけ定期請求と別に支払うこともできます。支払方法でクレジットカード決済を選択した場合、そのままクレジットカード決済の画面（収納代行会社のWebページ）に遷移して、その場で決済することが可能です。</li>
+  <li>参加申し込みの内容は、画面で確認することができます。また、画面上から参加／不参加を設定することも可能です。</li>
+  <li>法人の場合、参加人数を設定します。</li>
+  <li>募集定員に達すると、自動的に募集を締め切ることも可能です。</li>
+</ul>
+
+</div>
+
+<div class="section normal">
+
+<h2>イベント登録</h2>
+
+<p>プランと同様に、会員種別による料金設定、参加費の設定、参加費の支払方法などを設定します</p>
+
+<p>詳細は　<a href="event1.html">イベント登録</a></p>
+
+</div>
+
+<div class="section normal">
+
+<h2>イベント　メール送信</h2>
+
+<p>申込みURLが記載されたメール送信を行います。</p>
+
+<p>詳細は　<a href="event2.html">イベントメール送信</a></p>
+
+</div>
+
+<div class="section normal">
+
+<h2>イベント参加申込</h2>
+
+<p>施設管理者が参加受付することも、メールに記載された申込みURLから会員（請求先）様ご本人が参加申込を行うこともできます。</p>
+
+<p>詳細は　<a href="event3.html">イベント参加申込</a></p>
+
+</div>
+
+<div class="section normal">
+
+<h2>イベント参加者リスト</h2>
+
+<p>各イベントの参加者リストをＣＳＶファイルに出力できます。</p>
+
+<p>詳細は　<a href="event4.html">イベント参加者リスト</a></p>
+
+</div>
+
+</div>
+<!-- メインカラム終了 -->
+
+
+<!-- サイドバー開始 -->
+<div id="nav"></div>
+<!-- サイドバー終了 -->
+
+
+<hr class="clear">
+
+</div>
+<!-- コンテンツ終了 -->
+
+
+<!-- フッタ開始 -->
+<div id="footer"></div>
+<!-- フッタ終了 -->
+
+
+</div>
+<!-- ページ終了 -->
+
+</div>
+<!-- コンテナ終了 -->
+
+</body>
+
+
+</html>
+

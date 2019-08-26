@@ -1,0 +1,482 @@
+{{** <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title></title> **}}
+{{include file="pages_pc/school/_parts/html_header.html" }}
+	<script type="text/javascript">
+
+		  $(function() {
+		        /* $(".tablesorter").tablesorter( {
+		              headers: {
+		                  /!*7: { sorter: false },*!/
+		                  8: { sorter: false }
+		              }
+		          } );*/
+
+		     });
+
+		  $(function() {
+
+			$('#selectall').click(function() {  //on click
+		        if(this.checked) { // check select status
+		            $('.parent_select').each(function() { //loop through each checkbox
+		            	if(!this.disabled)
+		                	this.checked = true;  //select all checkboxes with class "question_select"
+		            });
+		        }else{
+		            $('.parent_select').each(function() { //loop through each checkbox
+		                this.checked = false; //deselect all checkboxes with class "question_select"
+		            });
+		        }
+		    });
+			$('#btn_confirm').click(function() {
+				$("#action_form").attr("action", "{{$_app_path}}invoice/multiEditComplete");
+				$("#action_form").submit();
+				return false;
+		    });
+
+			$('#search_cond_clear').click(function() {  // clear
+				$("input[name='parent_name']").val("");
+				$("select[name='school_category']").val("");
+				$("select[name='school_year']").val("");
+				$("#school_grade option").remove();
+
+				$("input[name='student_name']").val("");
+				$("select[name='class_id']").val("");
+
+				$("select[name='is_established']").val("");
+				$("select[name='is_requested']").val("");
+
+				$("select[name='invoice_year']").val("");
+				$("select[name='invoice_month']").val("");
+
+				$("select[name='course_id']").val("");
+				$("select[name='is_recieved']").val("");
+
+				$("select[name='invoice_type']").val("");
+			});
+
+			$('#search_cond_simple_clear').click(function() {  // clear
+				$("select[name='invoice_year_from']").val("");
+				$("select[name='invoice_month_from']").val("");
+				$("select[name='invoice_year_to']").val("");
+				$("select[name='invoice_month_to']").val("");
+
+				$('input[name="invoice_type[0]"').prop("checked",false);
+				$('input[name="invoice_type[1]"').prop("checked",false);
+				$('input[name="invoice_type[2]"').prop("checked",false);
+				$('input[name="invoice_type[3]"').prop("checked",false);
+
+				$('input[name="paied_type[0]"').prop("checked",false);
+				$('input[name="paied_type[1]"').prop("checked",false);
+
+			});
+
+			$('#current_month').click(function() {
+
+				var curr_date = new Date();
+				var curr_year = curr_date.getFullYear();
+				var curr_month = curr_date.getMonth() + 1;
+
+				$("select[name='invoice_year_from']").val(curr_year);
+				$("select[name='invoice_month_from']").val(curr_month);
+				$("select[name='invoice_year_to']").val(curr_year);
+				$("select[name='invoice_month_to']").val(curr_month);
+			});
+			$('#search_condition_detail_btn').click(function() {
+				$('#detail_search').hide();
+				$('#simple_search').show();
+			});
+
+			$('#search_condition_simple_btn').click(function() {
+				$('#simple_search').hide();
+				$('#detail_search').show();
+			});
+
+			$(document).ready(function(){
+				if( {{$request.search_cond}} == 1){
+					$('#simple_search').hide();
+				}
+				if( {{$request.search_cond}} == 2){
+					$('#detail_search').hide();
+				}
+			});
+		  });
+
+		  function getid(){
+			  var parent_ids = [];
+			  var i=0;
+	  		  $('.parent_select').each(function(){
+	  			  if(this.checked){
+					  parent_ids[i] = $(this).val();
+					  i++;
+	  			  }
+	  		  });
+	  		  return parent_ids;
+		  }
+	</script>
+
+	{{** 未入金リスト スクリプト **}}
+	{{include file="pages_pc/school/_parts/invoice/arrear_script.html" }}
+
+	<style type="text/css">
+		#wrapper .search_box td {
+			font-weight: bold;
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body>
+{{*** ヘッダ ***}}
+{{include file="pages_pc/school/_parts/body_header.html" }}
+
+{{*** 左サイドパネル ***}}
+{{include file="pages_pc/school/_parts/left_panel.html" }}
+
+<td style="min-width: 700px;" id="center_content">
+	<div class="section">
+		<div id="center_content_header" class="box_border1">
+			<h2 class="float_left">{{$main_title}}</h2>
+			{{include file="pages_pc/school/_parts/invoice/menu.html" }}
+			<div class="clr"></div>
+		</div><!--center_content_header-->
+
+		{{**<h3 id="content_h3" class="box_border1">詳細検索</h3>**}}
+		{{*** パンくず ***}}
+		{{include file="pages_pc/school/_parts/topic_list.html" }}
+		<h3 id="content_h3" class="box_border1">{{$invoice_mail_notification_title}}</h3>
+		<div class="search_box box_border1 padding1">
+		<div id="detail_search">
+			<form action="{{$_app_path}}invoice/invoiceManage" method="post" class="search_form" name="detail_form">
+
+				<table>
+					<tr>
+						<td style="width:370px;">
+							{{$guardian_fullname_furigana_title}}
+							<input class="text_middle" type="search" name="parent_name" value="{{$request.parent_name}}"/>
+						</td>
+						<td style="width:280px;">
+							{{$student_section_title}}&nbsp;&nbsp;&nbsp;
+							{{include file="pages_pc/school/_parts/student_grade.html"}}
+						</td>
+						<td style="width:210px;">
+							{{$status_title}}&nbsp;&nbsp;&nbsp;
+							<select name="workflow_status">
+								<option value=""></option>
+									{{html_options options=$workflow_status_list selected=$request.workflow_status}}
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:370px;">
+							{{$student_fullname_furigana_title}}
+							&nbsp;&nbsp;&nbsp;<input class="text_middle" type="search" name="student_name" value="{{$request.student_name}}">
+						</td>
+						<td style="width:280px;">
+							{{$main_captions[4]}}
+							<select name="class_id" >
+								<option value=""></option>
+								{{html_options options=$class_list selected=$request.class_id}}
+							</select>
+						</td>
+						<td style="width:210px;">
+							{{$not_payment_payment_title}}
+							<select name="is_recieved">
+								<option value=""></option>
+								{{html_options options=$is_recieved_list selected=$request.is_recieved}}
+							</select>
+						</td>
+
+					</tr>
+					<tr>
+						<td style="width:370px;">
+							{{$invoice_mth_title}}
+							<select name="invoice_year">
+								<option value=""></option>
+								{{html_options options=$year_list selected=$request.invoice_year}}
+							</select>&nbsp;{{$year_title}}
+							<select name="invoice_month">
+								<option value=""></option>
+								{{html_options options=$month_list selected=$request.invoice_month}}
+							</select>&nbsp;{{$month_title}}
+						</td>
+						<td style="width:280px;">
+							{{$main_captions[6]}}
+							<select name="course_id" >
+								<option value=""></option>
+								{{html_options options=$course_list selected=$request.course_id}}
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:210px;">
+							{{$invoice_method_title}}&nbsp;
+							<select name="invoice_type">
+								<option value=""></option>
+									{{html_options options=$invoice_type selected=$request.invoice_type}}
+							</select>
+						</td>
+					</tr>
+				</table>
+
+				<input type="submit" class="submit" value="{{$search_title}}">
+				<input type="button" class="submit" id="search_cond_clear" value="{{$clear_title}}">
+				<input type="button" class="submit" id="search_condition_detail_btn" value="{{$simple_search_title}}">
+
+				<div class="clr"></div>
+				</form>
+			</div>
+
+
+		<div id="simple_search">
+
+			{{if $action_status}}
+				<ul class="message_area">
+					<li class="{{if $action_status == "OK"}}info_message{{else}}error_message{{/if}}">
+						{{$action_message}}
+					</li>
+				</ul>
+				<br/>
+			{{/if}}
+
+			<form action="{{$_app_path}}invoice/invoiceManage?simple" method="post" class="search_form">
+				<table>
+					<tr>
+						<td style="width:510px;">
+							{{$invoice_mth_title}}
+							<select name="invoice_year_from">
+								<option value=""></option>
+								{{html_options options=$year_list selected=$request.invoice_year_from}}
+							</select>&nbsp;{{$year_title}}
+							<select name="invoice_month_from">
+								<option value=""></option>
+								{{html_options options=$month_list selected=$request.invoice_month_from}}
+							</select>&nbsp;{{$month_title}}
+							～
+							<select name="invoice_year_to">
+								<option value=""></option>
+								{{html_options options=$year_list selected=$request.invoice_year_to}}
+							</select>&nbsp;{{$year_title}}
+							<select name="invoice_month_to">
+								<option value=""></option>
+								{{html_options options=$month_list selected=$request.invoice_month_to}}
+							</select>&nbsp;{{$month_title}}
+							<input type="button" id="current_month" value="{{$this_month_title}}">
+						</td>
+					</tr>
+					<tr>     {{** 入金種別 **}}
+						<td style="width:510px;">
+						    {{$payment_method_title}}
+							<label>
+							<input class="student_types" type="checkbox" id="invoice_type0" name="invoice_type[0]" value="{{$request.invoice_type0}}" {{if $request.invoice_type0}}checked{{/if}}/>&nbsp;{{$cash_title}}
+							</label>
+							<label>
+							<input class="student_types" type="checkbox" id="invoice_type1" name="invoice_type[1]" value="{{$request.invoice_type1}}" {{if $request.invoice_type1}}checked{{/if}} />&nbsp;{{$deposit_title}}
+							</label>
+							<label>
+							<input class="student_types" type="checkbox" id="invoice_type2" name="invoice_type[2]" value="{{$request.invoice_type2}}" {{if $request.invoice_type2}}checked{{/if}} />&nbsp;{{$account_tranfer_title}}
+							</label>
+							<label>
+							<input class="student_types" type="checkbox" id="invoice_type3" name="invoice_type[3]" value="{{$request.invoice_type3}}" {{if $request.invoice_type3}}checked{{/if}} />&nbsp;{{$other_title}}
+							</label>
+						</td>
+					</tr>
+					<tr>     {{** 未入金／入金 **}}
+						<td style="width:280px;">
+						{{$payment_case_title}}
+							<label>
+							<input class="student_types" type="checkbox" id="paied_type0" name="paied_type[0]" value="{{$request.paied_type0}}" {{if $request.paied_type0}}checked{{/if}}/>&nbsp;{{$not_payment_title}}
+							</label>
+							<label>
+							<input class="student_types" type="checkbox" id="paied_type1" name="paied_type[1]" value="{{$request.paied_type1}}" {{if $request.paied_type1}}checked{{/if}}/>&nbsp;{{$payment_already_title}}
+							</label>
+						</td>
+					</tr>
+				</table>
+
+				<br/>
+				<input type="submit" name="search_button" value="{{$search_title}}" class="submit"/>
+				<input type="button" class="submit" id="search_cond_clear" value="{{$clear_title}}"/>
+				<input type="button" class="submit" id="search_condition_simple_btn" value="{{$advanced_search_title}}">
+			</form>
+		</div>
+
+
+		<div id="section_content1">
+			{{**<div class="content_detail">**}}
+			<pre> {{$select_payment_record_send_title}}</pre>
+			&nbsp;<input type="checkbox" id="selectall">&nbsp;&nbsp;{{$select_all_title}}<br/>
+			<form id="action_form" method="post">
+				<table class="table_list tablesorter body_scroll_table" id="data_table">
+					<thead>
+						<tr>
+							{{**<th style="width:50px;" class="text_title">&nbsp;</th>**}}
+							<th style="width: 50px;" class="text_title">{{$selection_title}}</th>
+							<th style="width:100px;" class="text_title header">{{$guardian_fullname_title}}</th>
+							<th style="width:130px;" class="text_title header">{{$member_name_title}}</th>
+							<th style="width: 80px;" class="text_title header">{{$student_section_title}}</th>
+							<th style="width: 95px;" class="text_title header">{{$invoice_year_month_title}}</th>
+							<th style="width:100px;" class="text_title header">{{$invoice_amount_title}}</th>
+							<th style="width: 80px;" class="text_title header">{{$payment_method_title}}</th>
+						{{**
+							<th style="width:70px;" class="text_title header">メール<br/></>送信</th>
+							<th style="width:60px;" class="text_title header">請求</th>
+							<th style="width:70px;" class="text_title header">入金</th>
+						**}}
+							<th style="width:160px;" class="text_title header">{{$status_title}}</th>
+						{{**
+							<th style="width:60px;" class="text_title header">{{$status_download_title}}</th>
+							<th style="width:70px;" class="text_title header">入金方法</th>
+							<th style="width:70px;" class="text_title header">入金日</th>
+						**}}
+						<!--
+							<th style="width:100px;" class="text_title">請求年月</th>
+							<th style="width:120px;" class="text_title">請求額</th>
+							<th style="width:80px;" class="text_title">入金</th>
+							<th style="width:80px;" class="text_title">通知方法</th>
+							<th style="width:70px;" class="text_title">編集</th>
+						-->
+							{{**<th style="width:100px;" class="text_title">&nbsp;</th>**}}
+						</tr>
+					</thead>
+					<tbody>
+						{{foreach from=$invoice_list|smarty:nodefaults item=row key=idx name="invoiceloop"}}
+						<tr class="table_row">
+							<td style="width:50px;text-align:center;">
+								{{if $is_established_list[$row.is_established] != '{{$confirm_title}}'}}
+									<input type="checkbox" name="parent_ids[]" value="{{$row.id}}" class="parent_select"></input>
+								{{/if}}
+							</td>
+							{{**
+								<td style="width:50px;text-align:center;">
+								{{if $is_established_list[$row.is_established] != '{{$confirm_title}}'}}
+									<input type="checkbox" name="parent_ids[]" value="{{$row.id}}" class="parent_select"></input>
+								{{/if}}
+								</td>
+							**}}
+								<td style="width:100px;">
+									{{if $auths.parent_detail == 1}}
+									<a class="text_link" href="{{$_app_path}}parent/detail?student_id=&orgparent_id={{$row.parent_id}}">
+										{{$row.parent_name}}
+									</a>
+									{{else}}<label>{{$row.parent_name}}</label>
+									{{/if}}
+								</td>
+								<td style="width:130px;">
+									{{foreach from=$row.student_list|smarty:nodefaults item=student_row}}
+										{{$student_row.student_no}}   {{$student_row.student_name}}<br/>
+									{{/foreach}}
+								</td>
+								<td style="width:80px;text-align:center;">
+									{{foreach from=$row.student_list|smarty:nodefaults item=student_row}}
+										{{if $student_row.school_category|is_numeric}}
+											{{$schoolCategory[$student_row.school_category]}}{{if $student_row.school_year}}{{$student_row.school_year}}{{$year_title}}{{/if}}
+										{{/if}}<br/>
+									{{/foreach}}
+								</td>
+								<td style="width:95px;text-align:center;">{{$row.invoice_year_month|date_format:'%Y年%m月'}}</td>
+								<td style="width:100px;text-align:right;">
+									{{if $row.amount_display_type == "0" or !$row.sales_tax_rate}}
+										{{$row.amount|number_format}}
+									{{else}}
+										{{math equation="x+floor(x*y)" x=$row.amount y=$row.sales_tax_rate assign="amount_tax"}}
+										{{$amount_tax|number_format}}
+									{{/if}}
+								</td>
+								<td style="width:80px;text-align:center;">{{$invoice_type[$row.invoice_type]}}</td>
+							{{**
+								<td style="width:70px;text-align:center;">
+									{{if $row.mail_infomation == "1"}}
+										{{if $row.is_mail_announced == "1"}}
+											送信済
+										{{else}}
+											未送信
+										{{/if}}
+									{{/if}}
+								</td>
+								<td style="width:60px;text-align:center;">
+									{{if $row.active_flag == 1}}
+										{{$is_requested_list[$row.is_requested]}}
+									{{else}}
+										無効
+									{{/if}}
+								</td>
+								<td style="width:70px;text-align:center;">
+									{{if $row.is_recieved == 1}}入金済み
+									{{elseif $row.is_recieved == -1}}資金不足
+									{{elseif $row.is_recieved == -2}}預金取引なし
+									{{elseif $row.is_recieved == -3}}預金者都合による振替停止
+									{{elseif $row.is_recieved == -4}}預金口座振替依頼書なし
+									{{elseif $row.is_recieved == -8}}委託者都合による振替停止
+									{{elseif $row.is_recieved == -9}}その他
+									{{else}}未入金
+									{{/if}}
+								</td>
+							**}}
+
+								<td style="width:160px;text-align:center;">
+									{{if $auths.invoice_detail == 1}}
+									<a class="text_link" href="{{$_app_path}}invoice/detail?id={{$row.id}}">
+										{{$is_established_list[$row.is_established]}}
+									</a>
+									{{else}} <label>{{$is_established_list[$row.is_established]}}</label>
+									{{/if}}
+								</td>
+							{{**
+								<td style="width:70px;text-align:center;">
+									{{$row.payment_type}}
+								</td>
+								<td style="width:70px;text-align:center;">
+									{{$row.payment_date}}
+								</td>
+							**}}
+						<!--
+							<td style="width:100px;text-align:center;">{{$row.invoice_year_month|date_format:'%Y年%m月'}}</td>
+							<td style="width:120px;text-align:right;">
+								{{if $row.amount_display_type == "0" or !$row.sales_tax_rate}}
+									{{$row.amount|number_format}}
+								{{else}}
+									{{math equation="x+floor(x*y)" x=$row.amount y=$row.sales_tax_rate assign="amount_tax"}}
+									{{$amount_tax|number_format}}
+								{{/if}}
+							</td>
+							<td style="width:80px;text-align:center;">{{$is_recieved_list[$row.is_recieved]}}</td>
+							<td style="width:80px;text-align:center;">
+								{{if $row.mail_infomation == 0 }}郵送
+								{{elseif $row.mail_information == 1}}メール
+								{{else}}未設定
+							{{/if}}
+						 -->
+						{{************
+							<td style="width:100px;text-align:center;">
+								{{if $row.is_established == "1" && $row.mail_announce == "1"}}
+									{{if $auths.invoice_mailsend ==1}}
+									<a class="mail_send_button" href="{{$_app_path}}invoice/mailsend?id={{$row.id}}" >メール通知</a>
+									{{/if}}
+								{{/if}}
+							</td>
+						*************}}
+						</tr>
+						{{foreachelse}}
+
+							<tr class="table_row">
+								<td class="error_row">{{$information_displayed_title}}</td>
+							</tr>
+						{{/foreach}}
+					</tbody>
+				</table>
+				<br/>
+				<input type="submit" value="{{$determine_invoice_btn_title}}" id="btn_confirm" class="submit3"/>
+
+				<br/><br/>
+				{{** 未入金リスト  **}}
+				{{include file="pages_pc/school/_parts/invoice/arrear_list.html" }}
+
+			</form>
+		</div>
+	</div>
+</td>
+{{*** 右サイドパネル ***}}
+{{include file="pages_pc/school/_parts/right_panel.html" }}
+
+{{*** フッタ ***}}
+{{include file="pages_pc/school/_parts/body_footer.html" }}
+{{include file="pages_pc/school/_parts/html_footer.html" }}
+

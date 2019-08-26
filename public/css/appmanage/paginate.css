@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+.pager_box{
+	text-align: center;	
+}
+.pager_box ul{
+	border: solid 1px #ccc;
+	display:inline-block;	
+}
+.pager_box ul li{
+	float: left;
+
+	line-height: 20px;
+	border-right: solid 1px #ccc;
+display:block;
+}
+.pager_box ul li:last-child{
+	border-right:none;
+}
+.pager_box ul li:hover{
+	background: #706f70;
+	color: #fff !important;
+}
+.pager_box ul a{
+	color: #706f70;
+	padding: 5px 15px 4px;
+	display:block; 
+
+}
+.pager_box ul a:hover{
+	color: #fff;
+	text-decoration:none !important;
+}

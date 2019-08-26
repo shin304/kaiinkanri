@@ -1,0 +1,120 @@
+.accordion{
+
+}
+.accordion dt{
+
+	color: #62728C;
+	font-size: 17px;
+	transition-duration:0.1s;
+
+    cursor:pointer;
+    font-weight: bold;
+    
+
+    }
+.accordion dt:hover{
+	opacity: 0.8;
+	padding-right: -5px;
+
+}
+.accordion dd{
+    text-align:center;
+    display:none;
+    padding: 10px;
+    border-top: solid 1px #ccc;
+
+}
+
+
+.accordion ul li{
+	list-style: none;
+	padding: 10px;
+	text-align: left;
+	position: relative;
+	left: 30px;
+	transition-duration:0.1s;
+	width: 212px;
+	color: #727171;
+
+}
+
+.accordion ul li:hover{
+
+	background: none;
+}
+
+
+
+
+
+/*ポップアップ*/
+.popup{position:relative}
+.popup:hover .popup__body{
+	-ms-transform:scale(1);
+	-webkit-transform:scale(1);
+	transform:scale(1);
+	display:block;
+	}
+.popup .popup__body{
+	background: #fff;
+	border-radius:4px;
+	box-shadow:0px 2px 10px rgba(0,0,0,0.2);
+	-ms-transform:scale(0);
+	-webkit-transform:scale(0);
+	transform:scale(0);
+	-moz-transition:all 0.1s ease-out 0.1s;
+	-o-transition:all 0.1s ease-out 0.1s;
+	-webkit-transition:all 0.1s ease-out;
+	-webkit-transition-delay:0.1s;
+	-webkit-transition:all 0.1s ease-out 0.1s;transition:all 0.1s ease-out 0.1s;
+	position:relative;
+	position:absolute;
+	top:34px;
+	left:27%;
+	width: 200px;
+	margin-left:-70px;
+	z-index:99999;
+
+	background-color:#fff;
+	padding: 0 !important;
+	
+	}
+	popup .popup__body:before{
+		content:"";
+		position:absolute;
+		width:0;
+		height:0;
+		border:6px solid transparent;
+		border-top-color:#fff
+		}
+	.popup .popup__body:before{
+		-ms-transform:translateX(-6px) translateY(-12px) rotate(180deg);
+		-webkit-transform:translateX(-6px) translateY(-12px) rotate(180deg);
+		transform:translateX(-6px) translateY(-12px) rotate(180deg);
+		right:auto;
+		left:70px;
+		top:0;
+
+		}
+		.popup .popup__list{
+			width:170px;
+			text-align:center;
+			border-top:1px solid #eee;
+			padding:5px 0 !important;
+			}
+		.popup .popup__list:first-child{
+			border-top:none}
+		.popup .popup__list a{
+			display:block;
+			color:#464646;
+			padding:0;
+			display:block !important;
+			color:#464646 !important;
+			padding:8px !important}
+			.popup .popup__list a:hover{
+			color:#30a4b1 !important;
+			background-color:transparent !important}
+.popup .popup__body li{
+	background: #fff;
+
+}

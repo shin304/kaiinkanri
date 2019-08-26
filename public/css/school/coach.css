@@ -1,0 +1,135 @@
+#auth label {
+	display: block;
+    float: left;
+    width: 150px;
+}
+.coach-table-header {
+    text-align: left;
+    color: #63738c;
+    border-collapse: collapse;
+    border-top: solid 4px #DCDDDD;
+    border-bottom: solid 2px #DCDDDD;
+    margin-top: 35px !important;
+    margin-bottom: 0px;
+    width: 100% !important;
+}
+.coach-table-content {
+    width: 100%;
+    text-align: left;
+    word-break: break-all;
+}
+.subject-table {
+    width: 96%;
+    background: #FBEFEF;
+    margin-left: 50px;
+    border-color:white;
+}
+.subject-table tr td{
+    padding: 10px;
+}
+.subject-table tr th{
+    padding: 10px;
+}
+.subject-table tr td:first-child{
+    width: 12%;
+    background: #A9BCF5;
+}
+.panel-group {
+    margin-bottom: 5px;
+}
+
+.sort_button i {
+    font-size:12px;
+    float:right;
+    margin-right: 50px;
+    margin-top: 4px;
+}
+.btn-register {
+    margin-top: -10px;
+}
+input[type="search"] {
+    padding: 5px 5px;
+    font-size: 13px;
+}
+.main-title {
+    font-weight: bold !important;
+    font-size: 16px;
+}
+.screen-title {
+    text-align: left;
+    font-size: 15px;
+}
+.text_link:hover{
+    cursor: pointer;
+}
+.dialog-table {
+    width: 100%;
+}
+.accordion-table{
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 100%;
+    background: #ddd;
+}
+.accordion-table td{
+    padding: 10px;
+}
+.accordion-table td:last-child{
+    float: right;
+    padding-right: 30px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 13px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    font-size: 13px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    font-size: 13px;
+}
+:-moz-placeholder { /* Firefox 18- */
+    font-size: 13px;
+}
+h3 {
+    padding: 2px 0;
+    color: #63738c;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.div-btn {
+    padding: 20px;
+}
+
+.div-btn li {
+    height: 32px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+    font-size: 15px;
+    float: left;
+    color: #00008B;
+    margin-right: 6px;
+    padding: 6px 8px;
+    text-shadow: 0 1px #FFF;
+    border: solid 1px #CCC;
+    border-radius: 3px;
+    transition-duration: 0.1s;
+    /*background: linear-gradient(to bottom, #ffffff 0%,#f6f6f6 47%,#ededed 100%) !important;*/
+}
+.text_ss {
+    width: 60px;
+}
+
+.div-prev-next {
+    padding: 20px;
+}
+.text_ss {
+    width: 60px;
+}
+img:hover{
+    cursor: pointer;
+}

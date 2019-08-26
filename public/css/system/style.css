@@ -1,0 +1,127 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0;
+	font-size: 14px;
+}
+
+body {
+	font-family: 'メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+header {
+	margin: 10px;
+	height: 50px;
+	background-color: #ccc;
+	position: relative;
+}
+
+header section {
+	position: absolute;
+}
+header section#app_logo {
+	display: none;
+	left: 30px;
+	top: 5px;
+}
+
+header section#app_title {
+	left: 100px;
+	top: 12px;
+	font-size: 16px;
+	font-weight: bolder;
+}
+
+header section#button_area2 {
+	left: 25px;
+	top: 12px;
+}
+
+header section#button_area {
+	right: 30px;
+	top: 12px;
+}
+header section#button_area a {
+	margin-left: 10px;
+}
+
+ul#menu_navi {
+	list-style: none;
+	padding: 10px;
+}
+
+ul#menu_navi li {
+	background-color: #008000;
+	padding: 10px;
+	border: 1px solid #007000;
+}
+
+ul#menu_navi li a {
+	text-decoration: none;
+	color: white;
+	font-weight: bolder;
+}
+
+h3 {
+	background-color: #90c6ca;
+	margin: 10px 10px 10px 20px;
+	padding: 3px;
+}
+
+h2 {
+	background-color: #008000;
+	color: #fff;
+	margin: 10px;
+	padding: 3px;
+}
+
+nav {
+	margin: 10px 0 0 45px;
+	font-size: 12px;
+}
+nav a {
+	font-size: 12px;
+}
+
+.message_area {
+	margin: 10px 5px;
+}
+
+.message_area ul {
+	list-style: none;
+}
+
+.message_area .error li {
+	font-size: 12px;
+	color: red;
+}
+
+.message_area .info li {
+	font-size: 12px;
+	color: black;
+}
+
+footer {
+	text-align: center;
+	margin-top: 40px;
+}
+
+
+table th, table td, table a {
+	font-size: 11px;
+}
+td {
+	padding: 1px 3px;
+}
+input {
+	font-size: 12px;
+}
+
+.required {
+	font-size: 12px;
+	color: red;
+}
+.notice{
+	font-size: 12px;
+	color: blue;
+}

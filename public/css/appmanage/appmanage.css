@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+p { font-size: 100%; }
+
+.v-hidden { visibility: hidden; }
+.d-none { display: none; }
+.required { color: #FF0000; }
+#search_area { display: none; }
+
+input[type='number'] { width: 100px; text-align: right; }
+input.datepicker { width: 120px; text-align: center; display: table-cell; }
+input.datetimepicker { width: 180px; text-align: center; display: table-cell; }
+
+.file-name { width: 80%; width: -webkit(100% - 40px); width: calc(100% - 40px); float: left; }
+.file-del { padding-top: 9px; padding-left: 12px; float: left; }

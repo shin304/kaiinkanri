@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	color: #383838;
+}
+
+body {
+	font-family:Helvetica, Arial,
+	'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Meiryo', 'メイリオ', sans-serif;
+	margin: 5px 10px;
+}
+
+.clrfix {
+	clear: both;
+}
+
+#main_title {
+	padding: 10px 10px 5px;
+}
+
+#main_title h1 {
+	font-size: 28px;
+}
+
+#main_title_info {
+	padding:5px 10px;
+}

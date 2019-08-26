@@ -1,0 +1,181 @@
+.clr{
+	clear: both;
+}
+#bill_content{
+	display: block;
+	border: solid 2px #ccc;
+	padding: 75px;
+	margin: 20px auto;
+	line-height: 150%;
+	text-align: left;
+	background: #fff;
+	width: 800px;
+	min-width: 500px;
+}
+
+#bill_content p{
+	line-height: 1.5em;
+	margin: 0;
+
+}
+#bill_content .bill_header_top{
+
+	margin-bottom: 10px;
+}
+#bill_content .bill_header_top p{
+	text-align: right;
+}
+
+#bill_header h1{
+	text-align: center;
+	font-size: 28px;
+	color: #000;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+#bill_content #bill_info{
+margin-bottom: 30px;
+}
+#bill_content #bill_info p{
+
+}
+#bill_content .bill_info_left{
+	float: left;
+	width: 300px;
+}
+#bill_content .bill_info_left p{
+	padding: 5px 0;	
+}
+#bill_content .company_name{
+	font-size: 18px;
+	text-decoration: underline;
+}
+#bill_content .bill_title{
+	font-size: 14px;
+}
+
+#bill_content .bill_much{
+	font-size: 20px;
+	text-decoration: underline;	
+}
+#bill_content .bill_p1{
+	font-size: 14px;
+}
+#bill_content .bill_kigen{
+	font-size: 14px;
+}
+
+
+#bill_content .bill_info_right{
+	float: right;
+	width: 35%;
+}
+
+#bill_content #bill_info .bill_info_right{
+	font-size: 14px;
+
+}
+
+
+#bill_content #bill_table{
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+#bill_content #bill_table th,#bill_table td{
+	border: solid 1px #000 !important;
+}
+#bill_content #bill_table th{
+	text-align: center;
+	padding: 3px 0;
+	background: #e4e4e4;
+}
+#bill_content #bill_table .th1{
+	width: 70%;
+}
+#bill_content #bill_table .th2{
+
+
+}
+#bill_content #bill_table td{
+	padding: 3px 10px;
+
+
+}
+#bill_content #bill_table .td2{
+	text-align: right;
+	min-height: 20px;
+    width: 130px;
+}
+#bill_content #bill_table2{
+	font-size: 15px;
+	margin-bottom: 10px;
+	float: right;
+	width:360px;
+	border-collapse: collapse;
+}
+#bill_content #bill_table2 th{
+	border: solid 1px #000;
+	padding: 3px 10px;
+	background: #e4e4e4;
+}
+#bill_content #bill_table2 td{
+	border: solid 1px #000;
+	text-align: right;
+	padding: 3px 10px;
+	width: 200px;
+}
+#bill_content .bill_p2{
+
+	font-size: 14px;
+}
+#bill_content .bank_account{
+	padding: 10px 0;
+	font-size: 14px;
+}
+
+/*
+#pay_table2{
+	width: 300px;
+	margin-bottom: 10px;
+	
+}
+*/
+
+#bill_content #pay_table2{
+/*	border-collapse: collapse;  */
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+#bill_content #pay_table2 th,#pay_table2 td{
+/*	
+	border: solid 1px #000 !important;
+*/
+}
+#bill_content #pay_table2 th{
+	text-align: right;
+	padding: 3px 10px;
+/*	background: #e4e4e4  */
+}
+#bill_content #pay_table2 .th1{
+	/*width: 70%;*/
+	border: 1px solid black;
+    background: #e4e4e4;
+    text-align: left;
+}
+#bill_content #pay_table2 .th2{
+
+
+}
+#bill_content #pay_table2 td{
+	padding: 3px 10px;
+}
+#bill_content #pay_table2 .td2{
+	text-align: right;
+	min-height: 20px;
+	width: 130px !important;
+    border: solid black 1px;
+}

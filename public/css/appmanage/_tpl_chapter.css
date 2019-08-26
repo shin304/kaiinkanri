@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+body {
+	font-family:Helvetica, Arial,
+	 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',
+	 Meiryo, メイリオ, sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	color: #555555;
+}
+
+.clrfix {
+	clear: both;
+}
+
+.clr {
+	clear: both;
+	height: 1px;
+	width: 100%;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+}
+
+.answer_box {
+	padding: 10px 4%;
+	background: #FEF7F2;
+}
+
+.answer_box p {
+	font-size: 20px;
+}
+
+.answer_box .answer_p {
+	font-weight: 800;
+	padding-left: 10px;
+	color: #E84055;
+	text-shadow: 0 1px 0 #FFF;
+}
+
+#question_box {
+	padding:10px 0;
+	border-bottom: solid 1px rgba(138,138,138,0.46);
+}
+
+.question_title_box {
+	padding:10px;
+/*	width: 100%; */
+	border-bottom: solid 1px rgba(165,165,165,0.62);
+}
+
+p.question_main_title {
+	font-size: 15px;
+	font-weight: 600
+}
+
+p.question_title {
+	font-size: 15px;
+	margin: 5px 10px;
+/*	padding-top: 10px; */
+}
+
+
+
+span.question_no {
+	font-weight: 600;
+	margin-right: 15px;
+	font-size: 15px;
+}
+
+div.answer_box {
+
+}
+
+p.text_answer {
+	margin-left: 5%;
+	font-weight: 600;
+}
+
+span.text_mark {
+	display: inline-block;
+	width: 30px;
+}
+span.text_word {
+	font-weight: 500;
+}
+
+ol.text_answer li {
+	margin-bottom: 5px;
+}
+
+.answer_box_1 {
+
+}
+
+/* 解答画像 */
+.kaitou {
+	clear:both;
+	width: 100%;
+	padding: 10px 0;
+	margin: 0 auto;
+}
+
+.kaitou img {
+	display: block;
+	background: #040d1c;
+	margin-bottom: 3px;
+}
+
+.kaitou .kaitou_img {
+	width: 46.3%;
+	padding:2px;
+	border: solid 1px #ccc;
+	text-align: center;
+	float: left;
+	margin: 0 0.5%;
+	margin-bottom: 10px;
+
+	background: #fffffb;
+}
+
+.audio {
+	display: block;
+	width: 90%;
+	margin: 15px auto;
+}
+
+div.question_child_box {
+	width: 88%;
+	background: #EFEFEF;
+	padding: 3%;
+	margin: 10px auto;
+}
+
+div.question_2child_box {
+	width: 94%;
+	background: #DCDDDD;
+	padding: 3%;
+	margin: 10px auto;
+}
+
+section#explain_box {
+	margin: 0 auto;
+	width: 95%;
+	padding: 15px 0;
+}
+
+.explain_title {
+	font-size: 15px;
+	font-weight: 600;
+	border-bottom: solid 1px #fff;
+	margin-bottom: 5px;
+	color: #898989;
+}
+
+.explain_text{
+	font-size: 15px;
+	line-height: 1.4em;
+}
+
+
+/*  ============= 答え ==============   */
+
+#answer_box {
+	margin: 0 auto;
+	display: none;
+	padding: 15px 10px;
+	border-bottom: solid 1px rgba(138,138,138,0.46);
+}
+
+.answer_no {
+	font-size: 24px;
+	font-weight: 700;
+	color: #5DC2D0;
+	margin-right: 10px;
+}

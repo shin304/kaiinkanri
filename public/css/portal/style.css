@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+*{
+    color: #3c3c3c;
+    margin: 0;
+    padding: 0;
+    font-family:'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+
+/*font-family: "游明朝体", "Yu Mincho", YuMincho, serif;*/
+}
+
+img,h1,p,table{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+}
+/*
+=========================
+===========共通==============
+=========================   
+*/
+.p10{font-size:10px;} .p11{font-size:11px;} .p12{font-size:12px;} .p13{font-size:13px;} .p14{font-size:14px;} .p15{font-size:15px;} .p16{font-size:16px;} .p17{font-size:17px;} .p18{font-size:18px;} .p19{font-size:19px;} .p20{font-size:20px;} .p21{font-size:21px;} .p22{font-size:22px;} .p23{font-size:23px;} .p24{font-size:24px;} .p25{font-size:25px;} .p26{font-size:26px;} .p27{font-size:27px;} .p28{font-size:28px;} .p29{font-size:29px;} .p30{font-size:30px;} .p31{font-size:31px;} .p32{font-size:33px;} .p34{font-size:34px;} .p35{font-size:35px;} .p36{font-size:36px;} .p37{font-size:37px;}
+
+.float_left{
+    float: left;
+}
+.float_right{
+    float: right;
+}
+.clr{
+    clear: both;
+}
+
+.gosic{
+    font-family:'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+
+.mincho{
+    font-family:'Hiragino Mincho ProN', serif;
+}
+.margin-bottom10{
+margin-bottom:10px;
+}
+.margin-bottom20{
+margin-bottom:20px;
+}
+.margin-bottom30{
+margin-bottom:30px;
+}
+
+
+/*
+
+    main
+    
+*/
+
+.width{
+}
+header{
+    background: #443A37;
+    color: #FFF;
+    min-height: 30px;
+}
+
+#main_panel{
+    
+}
+
+
+
+.info_p{
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+    padding: 2px 15px 2px;
+    border-left: solid 7px #443A37;
+    line-height: 1.2em;
+}
+
+.font_style3{
+    font-size: 12px;
+
+}
+
+
+.content_box{
+    /*width: 91%;
+    background: #f2f2f2;
+    margin: 0 auto;
+    padding: 20px 2%;
+    */
+}
+
+#main_panel .title_bar{
+    font-size: 22px;
+    border-bottom: solid 1px #929292;
+    margin-bottom: 15px;
+    background: #DCD9D1;
+    padding: 30px 3% 6px;
+    text-shadow: 0 1px #fff;
+    
+}
+#main_panel .title_bar2{
+    text-align: right;
+    font-size: 15px;
+    padding: 0px 0% 0px;
+    color: #7c7c7c;
+    margin-top: 20px;
+}
+#main_panel .title_bar2 .juku_name{
+    font-weight: bold;
+}
+#main_panel .title_bar2 .juku_tel{
+    font-size: 13px;
+    line-height: 1.5em;
+}
+#main_panel .title_bar2 .juku_address{
+    font-size: 13px;
+    line-height: 1.5em;
+}
+
+
+
+#main_panel .content_header{
+    color: #515151;
+    padding: 10px 0%;
+}
+#main_panel .content_footer{
+    color: #515151;
+    padding: 10px 0%;
+    margin-bottom: 40px;
+}
+
+#main_panel .table_input{
+    border-collapse: collapse;
+    border: 1px #b7b3a8 solid;
+    width: 100%;    
+    margin: 5px 0 6px;
+}
+
+#main_panel .table_input .text_title{
+    text-align: left;
+    font-size: 14px;
+    padding: 7px;
+    background: #F0EEEA;
+    border-right: solid 1px #b7b3a8;
+    border-bottom: solid 1px #b7b3a8;
+    text-shadow: 0 1px 0px #fff;
+    vertical-align: top;
+    font-weight: bold;
+}
+#main_panel .table_input td{
+    border-bottom: solid 1px #b7b3a8;
+    padding-left: 10px;
+    font-size: 15px;
+    padding: 6px;
+    border-right:  solid 1px #b7b3a8;
+}
+
+.content_detail{
+    padding: 0px 3%;
+}
+.content_detail .ct_p1{
+    font-size: 20px;
+}
+.content_detail .form_error_p{
+    color: red;
+}
+
+.font_style2{
+    font-size: 13px;
+    color: #8d8d8d;
+}
+
+
+.submit{
+    margin: 1px 0%;
+    border:1px solid #25729a; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:arial, helvetica, sans-serif; padding: 2px 50px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+     background-color: #3093c7; background-image: -webkit-gradient(linear, left top, left bottom, from(#3093c7), to(#1c5a85));
+     background-image: -webkit-linear-gradient(top, #3093c7, #1c5a85);
+     background-image: -moz-linear-gradient(top, #3093c7, #1c5a85);
+     background-image: -ms-linear-gradient(top, #3093c7, #1c5a85);
+     background-image: -o-linear-gradient(top, #3093c7, #1c5a85);
+     background-image: linear-gradient(to bottom, #3093c7, #1c5a85);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3093c7, endColorstr=#1c5a85);
+    margin-bottom: 6px;
+    height: 24px;
+}
+
+
+.cancel_btn{
+    margin: 1px 0%;
+    border:1px solid #25729a; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:arial, helvetica, sans-serif; padding: 2px 50px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+     background-color: #3093c7; background-image: -webkit-gradient(linear, left top, left bottom, from(#3093c7), to(#1c5a85));
+     background-image: -webkit-linear-gradient(top, #3093c7, #1c5a85);
+     background-image: -moz-linear-gradient(top, #3093c7, #1c5a85);
+     background-image: -ms-linear-gradient(top, #3093c7, #1c5a85);
+     background-image: -o-linear-gradient(top, #3093c7, #1c5a85);
+     background-image: linear-gradient(to bottom, #3093c7, #1c5a85);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3093c7, endColorstr=#1c5a85);
+        margin-bottom: 6px;
+}
+
+.ui-dialog {
+    font-size: 14px;
+}
+
+.ui-dialog-title {
+    color: white;
+}
+
+
+
+
+

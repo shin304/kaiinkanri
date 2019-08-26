@@ -1,0 +1,21 @@
+#pschool_add_block {
+  border: 1px solid #9fa3a5;
+  padding: 10px;
+  background: #eaf4fb;
+}
+
+#pschool_add_block h3 {
+  background: #3498db;
+  color: #fff;
+  padding: 5px;
+}
+
+.require::after {
+    content: "*";
+    color: red;
+}
+
+.zip_code {
+    width: 10%;
+    display: inline-block;
+}

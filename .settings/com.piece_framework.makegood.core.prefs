@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+phpunit_config_file=/wisteria/phpunit.xml
+preload_script=
+test_file_pattern=
+test_folders=/wisteria/tests
+testing_framework=PHPUnit

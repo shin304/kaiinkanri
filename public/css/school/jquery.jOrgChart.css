@@ -1,0 +1,126 @@
+/* Basic styling */
+/* Draw the lines */
+.jOrgChart .line {
+  height                : 20px;
+  width                 : 4px;
+}
+
+.jOrgChart .down {
+  background-color 		: black;	
+  margin 				: 0px auto;
+}
+
+.jOrgChart .top {
+  border-top          : 3px solid black !important;
+}
+
+.jOrgChart .left {
+  border-right          : 2px solid black !important;
+}
+
+.jOrgChart .right {
+  border-left           : 2px solid black !important;
+}
+
+.jOrgChart .innode {
+	width: 140px;
+    height: 40px;
+}
+
+p.tooltip {
+    word-wrap			: nowrap;
+    overflow			: hidden;
+    width				: 140px;
+    height				: 40px;
+}
+/*
+p.tooltip:hover { 
+    overflow			: visible;
+    word-wrap			: pre-line;
+    color				: white;
+    width				: 140px;
+    min-height			: 90px;
+    height				: auto;
+    background-color	: black;
+    opacity				: 0.6;
+}
+*/
+/* node cell */
+.jOrgChart td {
+  text-align            : center;
+  vertical-align        : top;
+  padding               : 0;
+}
+
+/* The node */
+.jOrgChart .node {
+  background-color 		: #dedad1;
+  display               : inline-block;
+  /*width                 : 96px;*/
+  width					: 140px;
+  /*height                : 60px;*/
+  height				: 90px;
+  z-index 				: 10;
+  /*margin               : 0 2px;*/
+  margin               	: 0 4px;
+  padding				: 4px;
+}
+
+.jOrgChart .current{
+  background-color: #FF9800;
+}
+
+/* jQuery drag 'n drop */
+
+.drag-active {
+  border-style			: dotted !important;
+}
+
+.drop-hover {
+  border-style			: solid !important;
+  border-color 			: #E05E00 !important;
+}
+
+#chart{
+  margin-top: 30px;
+}
+
+.jOrgChart > table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#org{
+  display: none;
+}
+
+.jOrgChart .node .info_area{
+  margin-top: 4px;
+}
+
+.jOrgChart .node .info_sec {
+  text-align: left;
+  margin-left: 52px;
+}
+
+.jOrgChart .node .info_sec .info {  
+  font-size: 11px;
+}
+
+.jOrgChart .node .logo{
+  width: 48px;  
+  height: 48px;
+  float: left;
+}
+
+.jOrgChart .node .school_info{
+  text-align: left;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-top: 6px;
+  // position: absolute;
+}
+
+.jOrgChart .node .school_info .info{
+  font-size: 11px;
+}

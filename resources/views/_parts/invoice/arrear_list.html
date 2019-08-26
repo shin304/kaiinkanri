@@ -1,0 +1,27 @@
+							{{** 未入金リスト **}}
+							<div>
+								<input type="checkbox" name="arrear_check" id="arrear_check">&nbsp;{{$history_non_payment_list_title}}
+								&nbsp;&nbsp;&nbsp;{{$invoice_method_title}}&nbsp;
+								<select name="parent_invoice_type">
+									<option value=""></option>
+									{{html_options options=$invoice_type selected=$request.invoice_type}}
+								</select>
+								<br/><br/>
+								<table class="table_list tablesorter body_scroll_table" id="arrear_list" style="display:none;">
+								<thead>
+									<tr>
+										<th style="width:100px;" class="text_title header" id="arrear_parent">{{$guardian_fullname_title}}</th>
+										<th style="width:130px;" class="text_title header" id="arrear_student">{{$student_name_title}}</th>
+										<th style="width: 80px;" class="text_title header" id="arrear_schoolyear">{{$student_section_title}}</th>
+										<th style="width: 95px;" class="text_title header" id="arrear_invoicedate">{{$invoice_year_month_title}}</th>
+										<th style="width:100px;" class="text_title header" id="arrear_amount">{{$invoice_amount_title}}</th>
+										<th style="width: 80px;" class="text_title header" id="arrear_invoicetype">{{$invoice_method_title}}</th>
+										<th style="width:160px;" class="text_title header" id="arrear_status">{{$situation_status_title}}</th>
+									</tr>
+								</thead>
+
+								<tbody>
+								</tbody>
+								
+								</table>
+							</div>

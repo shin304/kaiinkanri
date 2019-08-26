@@ -1,0 +1,195 @@
+.tab_menu li {
+	margin-left:0px;
+	list-style-type:none;
+	float:left;
+	padding-right:60px;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	font-size:0;
+	clear: both;
+	visibility:hidden;
+}
+
+
+.search_form table td {
+	width:190px;
+}
+
+.search_form table td input.text_s {
+	width:100px;
+}
+
+.search_form .button {
+	text-align:right;
+}
+
+.invoice_search .content_detail {
+	padding-left:0;
+	width:100%;
+}
+
+.body_scroll_table tbody {
+	float:left;
+	overflow-x:auto;
+	overflow-y:scroll;
+	min-height:10px;
+	max-height:355px;
+	width:-moz-max-content;		/* 100%;*/
+}
+
+.body_scroll_table tr {
+	float:left;
+	width:100%;
+}
+
+.body_scroll_table th,
+.body_scroll_table td {
+	width:200px;
+	box-sizing:border-box;
+}
+
+.invoice_student_tab {
+	float:left;
+	height: 25px;
+	padding-top: 5px;
+	text-align: center;
+}
+
+.invoice_student_tab_content {
+	padding: 15px;
+}
+
+.invoice_student_tab_content .invoice_item_list li {
+	list-style-type: none;
+	margin-bottom:5px;
+}
+
+.invoice_student_tab_content .invoice_item_title {
+	font-size:1.4em;
+}
+
+.invoice_student_tab_content .invoice_item_list_area {
+	margin-top: 5px;
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+
+.invoice_student_tab_content .invoice_item_list_area .invoice_item_list .invoice_item_name {
+	float:left;
+	width:150px;
+}
+
+.invoice_student_tab_content .invoice_item_list_area .invoice_item_list .invoice_item_price {
+	float:left;
+	width:150px;
+}
+
+.invoice_confirm_tab {
+}
+
+.invoice_confirm_tab .invoice_header_area .parent_name,
+.invoice_confirm_tab .invoice_header_area .amount_tax span {
+	font-size: 1.3em;
+}
+
+.invoice_confirm_tab .invoice_header_area .amount_tax {
+	text-decoration: underline;
+}
+
+
+.invoice_confirm_tab .invoice_body_area .student_item_list {
+	padding:5px 5px 5px 15px;
+}
+
+.invoice_confirm_tab .invoice_body_area .item_name {
+	float:left;
+	width:200px;
+}
+
+.invoice_confirm_tab .invoice_body_area .item_price {
+	float:left;
+	width:150px;
+	text-align: right;
+}
+
+.invoice_confirm_tab .invoice_body_area .student_total {
+	float:left;
+	width:200px;
+	text-align: right;
+}
+
+.invoice_confirm_tab .invoice_body_area .discount_item_list .item_name {
+	width:215px;
+}
+
+.invoice_confirm_tab .invoice_footer_area .item_name {
+	float:left;
+	width:215px;
+	text-align: right;
+}
+
+.invoice_confirm_tab .invoice_footer_area .item_price {
+	float:left;
+	width:150px;
+	text-align: right;
+}
+
+
+#custom_dialog a:link {
+	color: #0000EE;
+}
+
+#custom_dialog a:visited {
+	color: #000080;
+}
+
+/*style for new invoice summary*/
+/*.table_data{*/
+	/*width: 90%;*/
+/*}*/
+
+.table_header{
+    width: 100% !important;
+    min-height: 50px;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+
+.row_invoice td{
+    border: 1px solid black !important;
+    max-width: 300px !important;
+    width: 200px !important;
+    min-width: 100px !important;
+    padding: 10px !important;
+    background: #FBEFEF;
+}
+
+.panel-collapse{
+    margin-left: 50px !important;
+    width: 90%;
+}
+.panel-body{
+    border-top: none !important;
+}
+
+/*accordion style for list invoice of month*/
+.panel-group {
+    margin-bottom: 5px !important;
+}
+.content_accordion{
+    border-collapse: collapse;
+}
+.content_accordion th {
+    padding :  10px;
+    background-color: #A9BCF5;
+    border: 0.1px solid black !important;
+}
+.content_accordion td{
+    padding :  10px 10px 10px 20px;
+    background-color: #FBEFEF;
+    border: 0.1px solid white !important;
+}

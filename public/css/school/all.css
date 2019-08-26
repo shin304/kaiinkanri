@@ -1,0 +1,83 @@
+@import url("invoice_print2.css");
+@import url("tools.css");
+
+
+/*form*/
+
+input[type="text"],input[type="password"],textarea,input[type="number"],input[type="search"]{
+	padding: 3px 8px 2px;
+	font-size: 15px;
+	border-radius: 5px;
+	border: solid 1px #ccc;
+}
+/*input[type="button"],button{*/
+	/*padding: 3px 8px 2px;	*/
+	/*font-size: 15px;*/
+	/*border-radius: 5px;*/
+	/*border: solid 1px #ccc;*/
+	/*cursor: pointer;*/
+/*!* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,eaeaea+100 *!*/
+/*background: #ffffff; !* Old browsers *!*/
+/*background: -moz-linear-gradient(top,  #ffffff 0%, #eaeaea 100%); !* FF3.6-15 *!*/
+/*background: -webkit-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); !* Chrome10-25,Safari5.1-6 *!*/
+/*background: linear-gradient(to bottom,  #ffffff 0%,#eaeaea 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 ); !* IE6-9 *!*/
+
+/*}*/
+input[type="button"],button{
+	padding: 3px 8px 2px;
+	font-size: 15px;
+	border-radius: 5px;
+	border: solid 1px #ccc;
+	cursor: pointer;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,eaeaea+100 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #eaeaea 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ffffff 0%,#eaeaea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */
+
+}
+.text_m{
+	width: 300px;
+}
+input_text_long{
+
+}
+select{
+	padding: 3px 8px 2px;
+	font-size: 15px;
+	border-radius: 5px;
+	border: solid 1px #ccc;
+	background: #f2f2f2;	
+}
+
+
+
+
+
+/*tab*/
+
+/*
+	タブ切り替え
+*/
+.tabs{
+}
+.tabs__menu{
+	margin-bottom: 8px;
+}
+.tabs__menu li{
+	float: left;
+	font-size: 17px;
+	padding: 0 10px;
+	border-right: solid 1px #ccc;
+	margin: 0 5px;
+}
+.tabs__menu li a{
+	color: #6c6c6c;
+}
+.tabs__menu .active{
+	border-bottom: solid 4px #ebe7e1;
+}
+
+

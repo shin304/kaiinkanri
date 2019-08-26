@@ -1,0 +1,94 @@
+.form-edit-add .panel-body {
+    /*width: 50%;*/
+}
+.start_sort_input .form-group {
+    width: 49%;
+    display: inline-block;
+}
+.start_sort_input .form-group:nth-child(even) {
+    padding-left: 20px;
+}
+.btn-copy {
+    color: #5ca248;
+    font-weight: 700;
+}
+
+.btn-copy:active, .btn-copy:hover {
+    background: #5ca248;
+    color: #fff;
+    font-weight: 700;
+}
+
+ul#screen-name {
+    list-style-type:none;
+}
+ul#screen-name li {
+    display: inline-block;
+    color: #337ab7;
+    border: solid 1px #76838f;
+    padding: 4px;
+    border-radius: 4px;
+    background: #ffffe5;
+    margin: 4px 2px;
+}
+ul#screen-name li:hover {
+    background: #337ab7;
+    color: #fff;
+}
+
+ul#screen-name li.active {
+    background: #337ab7;
+    color: #fff;
+}
+
+#custom-screen-area div.panel-screen-content {
+    width: 45%;
+    display: inline-block;
+}
+
+.panel-screen-content input {
+    display: list-item;
+    color: #5ca248;
+    font-weight: 700;
+}
+#custom-screen-area span {
+    font-weight: 700;
+    margin-left: 25px;
+    color: #000;
+}
+.panel-message-content div {
+    margin: 8px 15px;
+}
+
+.panel-message-content div input {
+    display: inline-block;
+    width: 450px;
+}
+.panel-message-content div input:read-only {
+    width: 270px;
+}
+
+.panel-message-content ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.panel-message-content ul li{
+    display: inline-block;
+    width: 400px;
+    font-size: smaller; 
+    font-weight: 700;
+}
+
+/*=========Dialog==========*/
+.ui-dialog-titlebar-close {
+    display: none;
+}
+
+.ui-dialog-buttonset button:first-child {
+    border: none;
+}
+
+.ui-dialog-buttonset button:nth-child(2) {
+    border: solid 1px #999;
+}

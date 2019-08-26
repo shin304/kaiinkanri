@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+<meta name="keywords" content="キーワード1,キーワード2,キーワード3">
+<meta name="description" content="このページに関する簡単な説明。">
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
+<title>らくらく会員管理</title>
+
+<script type="text/javascript">
+$(function(){
+$("#header").load("parts/header.html");
+$("#nav").load("parts/subMenu.html");
+$("#footer").load("parts/footer.html");
+})
+</script>
+
+</head>
+<body>
+
+<!-- コンテナ開始 -->
+<div id="container">
+
+<!-- ページ開始 -->
+<div id="page">
+
+
+<!-- ヘッダ開始 -->
+<div id="header"></div>
+<!-- ヘッダ終了 -->
+
+
+<!-- コンテンツ開始 -->
+<div id="content">
+
+
+<!-- メインカラム開始 -->
+<div id="main">
+
+<h1 class="pageTitle">支払方法別　処理</h1>
+<div class="section emphasis">
+
+<h2>支払方法により処理の手順が異なります。</h2>
+
+<ul>
+  <li>振込・現金</li>
+  <li>クレジットカード</li>
+  <li>口座振替</li>
+  <li>コンビニ決済</li>
+  <li>ゆうちょ振替</li>
+</ul>
+<p><a href="pdf/01.pdf" target="blank">請求の流れ　図解はこちら</a></p>
+
+</div>
+
+<div class="section normal">
+
+<h2>振込・現金</h2>
+
+<p>請求書のメール送信・郵送を行います。入金があった場合は、入金処理にて消込します。</p>
+
+<p>【振込・現金　動画】</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tqQIV_FuAe0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>入金消込の詳細は、<a href="payment.html">入金処理</a></p>
+
+</div>
+
+<div class="section normal">
+
+<h2>クレジットカード</h2>
+
+<p>請求メールを送信し、お客様がメール記載のＵＲＬから決済処理をします。入金消込はシステムで自動で行われます。</p>
+
+<p>【クレジットカード　請求書のメール送信　動画】</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EOCyoQ1Av2s?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<hr>
+
+<p>【クレジットカード　お客様の決済処理　動画】</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K4UUUIxq5ps?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+</div>
+
+<div class="section normal">
+
+<h2>口座振替</h2>
+
+<p>請求メール送信後、外部連携により請求データを作成します。請求データの結果取込を行うことにより、入金消込が完了します。</p>
+
+<p>【口座振替　請求書のメール送信　動画】</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T1AYSnn-PLM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<hr>
+
+<p>【口座振替　外部連携データ作成　動画】</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EhwpbO-3JTM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<hr>
+
+<p>【口座振替　請求データ結果取込　動画】</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7csh83um-58?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+</div>
+
+<div class="section normal">
+
+<h2>コンビニ決済</h2>
+
+<p>外部連携により請求データを作成します。請求データの取込を入金情報取込を行うことにより、入金消込が完了します。</p>
+
+<p>【コンビニ決済　外部連携データ作成　動画】</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_GFHisqowIA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<hr>
+
+<p>【コンビニ決済　請求データ入金情報取込　動画】</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zLMs70VtSNA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+</div>
+
+<div class="section normal">
+
+<h2>ゆうちょ振替</h2>
+
+<p>外部連携により請求データを作成します。入金があった場合は、入金処理にて消込します。</p>
+
+<p>【ゆうちょ振替　外部連携データ作成　動画】</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tywK0nhlWec?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>入金消込の詳細は、<a href="payment.html">入金処理</a></p>
+
+</div>
+
+</div>
+<!-- メインカラム終了 -->
+
+
+<!-- サイドバー開始 -->
+<div id="nav"></div>
+<!-- サイドバー終了 -->
+
+
+<hr class="clear">
+
+</div>
+<!-- コンテンツ終了 -->
+
+
+<!-- フッタ開始 -->
+<div id="footer"></div>
+<!-- フッタ終了 -->
+
+
+</div>
+<!-- ページ終了 -->
+
+</div>
+<!-- コンテナ終了 -->
+
+</body>
+
+
+</html>
+

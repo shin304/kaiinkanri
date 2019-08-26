@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>会員証印刷</title>
+	
+
+<style type="text/css">
+
+</style>
+
+</head>
+
+<body>
+
+<div id="content">
+<p class="company_name">{{if $data.student_name}}{{$data.student_name}} 様{{/if}}</p>
+
+<div class='card_box'>
+	<div class='left_box'>
+		<div class="left_border">
+		</div>
+	</div>
+	<div class='right_box'>
+		<div class="right_border">
+			<table style="background-image: url('school/img/_card_front.png')">
+				<tr>
+					<td class="width_short pschool_logo">
+						{{if $data.pschool_logo}}
+						<img src="school/images/{{$data.pschool_logo}}" alt="back logo" class="h32">
+						{{/if}}
+					</td>
+					<td class="width_long pschool_name">					
+						{{$data.pschool_name}}
+					</td>
+				</tr>
+				<tr>
+					<td class="student_logo" rowspan="2">
+						{{if $data.student_img}}
+						<img src="school/img/{{$data.student_img}}" alt="student image"/>
+						{{/if}}
+					</td>
+					<td class="student_name">
+						{{$data.student_name}}
+					</td>
+				</tr>
+				<tr>
+					<td class="student_code">
+						{{if $data.student_no}}
+						{{$data.student_no}}<br/>
+						<img src="school/img/{{$data.student_no}}_barcode.png" alt="student code" class="w160"/>
+						{{/if}}
+					</td>
+				</tr>
+				<tr>
+					<td class="student_bottom">
+					
+					</td>
+				</tr>
+			</table>
+			<table style="background-image: url('school/img/_card_back.png')">
+				<tr>
+					<td class="card_size">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<table class="table_rotate">
+				<tr>
+					<td class="back_name" colspan="2">
+						{{$data.pschool_name}}
+					</td>
+				</tr>
+				<tr>
+					<td class="back_logo" colspan="2">
+						{{if $data.pschool_logo}}
+						<img src="school/images/{{$data.pschool_logo}}" alt="back logo" class="h100">
+						{{/if}}
+					</td>
+				</tr>
+				<tr>
+					<td class="width_long back_web">
+						{{$data.pschool_web}}
+					</td>
+					<td class="width_short back_tel">
+						{{$data.pschool_tel}}
+					</td>
+				</tr>
+				<tr>
+					<td class="back_bottom" colspan="2" >
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class='clear'></div>
+</div>
+</div>
+</body>
+</html>

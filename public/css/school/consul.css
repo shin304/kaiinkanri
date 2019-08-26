@@ -1,0 +1,43 @@
+.schedule_adjust_area {
+	overflow-x:auto;
+}
+
+.schedule_table {
+
+}
+
+.schedule_table .hour_area {
+	width: 50px;
+}
+
+.schedule_table .hour_area .hour_title {
+	margin-top:-33px;
+	margin-left:-5px;
+	background-color:white;
+	width:50px;
+	height:31px;
+	text-align:right;
+}
+
+.schedule_table .hour_area.hour_area_right .hour_title {
+	margin-left:5px;
+	text-align:left;
+}
+
+.schedule_table .target_area {
+	border: 1px solid lightskyblue;
+	width: 200px;
+	text-align:center;
+}
+
+.schedule_table .target_area.last {
+	border:none;
+}
+
+.result_input_form table td {
+	width:290px;
+}
+
+.result_input_form table td input.text_s {
+	width:100px;
+}

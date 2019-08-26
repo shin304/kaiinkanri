@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+<meta name="keywords" content="キーワード1,キーワード2,キーワード3">
+<meta name="description" content="このページに関する簡単な説明。">
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
+<title>らくらく会員管理</title>
+
+<script type="text/javascript">
+$(function(){
+$("#header").load("parts/header.html");
+$("#nav").load("parts/subMenu.html");
+$("#footer").load("parts/footer.html");
+})
+</script>
+
+</head>
+<body>
+
+<!-- コンテナ開始 -->
+<div id="container">
+
+<!-- ページ開始 -->
+<div id="page">
+
+
+<!-- ヘッダ開始 -->
+<div id="header"></div>
+<!-- ヘッダ終了 -->
+
+
+<!-- コンテンツ開始 -->
+<div id="content">
+
+
+<!-- メインカラム開始 -->
+<div id="main">
+
+<h1 class="pageTitle">請求管理</h1>
+
+<div class="section emphasis">
+
+<h2>請求書の作成（定期請求）と外部システム連携を行います</h2>
+
+<p>クラス情報をもとに、請求書の一括または個別請求書を作成します。（基本情報で『請求バッチ処理日』を設定していれば、システムが自動で当月請求書を作成します）</p>
+
+<p>支払方法別に、各フェーズの処理状況を表示します。</p>
+
+<p>請求書は３つのフェーズに分かれています。</p>
+<ul>
+  <li>作成・編集モード　請求書の作成と編集を行います。未入金の請求を当月請求書に合算することもできます。</li>
+  <li>請求書確定モード　請求書を確定させ、請求書送付をできるようにします。</li>
+  <li>請求書送付モード　請求書をメールまたは郵送で送付します（請求書の変更はできなくなります）</li>
+</ul>
+
+<p>口座振替・コンビニ決済・ゆうちょ振込の場合、外部システムと連携を行います。</p>
+<ul>
+  <li>口座振替　ファイルの入出力で消し込みまで行います。ひと月に１回行います。(１－１の関係）</li>
+  <li>コンビニ決済　ファイルの入出力で消し込みまで行います。ひと月に何回でも行えます。（ｎ－ｎの関係　戻りは入金があった日付毎）</li>
+  <li>ゆうちょ振込　ファイルの出力を行います。消し込みは入金処理で行います。</li>
+</ul>
+
+</div>
+
+<div class="section normal">
+
+<h2>支払方法による違い</h2>
+
+<img src="img/01.PNG">
+
+</div>
+
+<div class="section normal">
+
+<h2>請求の流れ</h2>
+
+<p><a href="pdf/01.pdf" target="blank">請求の流れ　図解はこちら</a></p>
+
+</div>
+
+</div>
+<!-- メインカラム終了 -->
+
+
+<!-- サイドバー開始 -->
+<div id="nav"></div>
+<!-- サイドバー終了 -->
+
+
+<hr class="clear">
+
+</div>
+<!-- コンテンツ終了 -->
+
+
+<!-- フッタ開始 -->
+<div id="footer"></div>
+<!-- フッタ終了 -->
+
+
+</div>
+<!-- ページ終了 -->
+
+</div>
+<!-- コンテナ終了 -->
+
+</body>
+
+
+</html>
+
